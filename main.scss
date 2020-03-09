@@ -1,0 +1,34 @@
+// ==colors==
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+// == /color==
+
+@mixin menu {
+    color: #ffffff;
+    font-size:13px;
+    font-weight: 500;
+    font-family: ubuntu;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: initial;
+}
+
+// ===base==
+@import './css/layout/fonts'; 
+@import './css/layout/layout'; 
+@import './css/layout/normalize'; 
+// ===/base==
+
+
+// ==blocks==
+@import './css/layout/blocks/about'; 
+@import './css/layout/blocks/header'; 
+@import './css/layout/blocks/base'; 
+@import './css/layout/blocks/scroll'; 
+@import './css/layout/blocks/section'; 
+@import './css/layout/blocks/features'; 
+@import './css/layout/blocks/reviews'; 
+@import './css/layout/blocks/review'; 
+@import './css/layout/blocks/future';

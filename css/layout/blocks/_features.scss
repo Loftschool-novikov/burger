@@ -1,0 +1,14 @@
+.features {
+    background: url(/images/features-bg.jpg) center center / cover no-repeat;
+  }
+  
+  .features__list {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .features__item {
+    width: calc(100% / 3 - 26px);
+  }
+

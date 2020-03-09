@@ -1,0 +1,19 @@
+.feature {
+    text-align: center;
+
+    &__title {
+        @include lifehack();
+        font-size: 24px;
+        padding:30px 0 20px 0 ;
+    }
+}
+  
+.feature__img {
+    display: flex;
+    justify-content: center;
+}
+
+.feature__content {
+    display: flex;
+    flex-direction: column;
+}

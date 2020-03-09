@@ -1,0 +1,79 @@
+
+.about {
+    display: flex;
+        &__pic{   
+            display: flex;
+            flex: 50%;
+            padding: 100px 0 0 0;
+        }
+            &__pic-burger{
+                position: relative;
+                margin: -67px 0 0 30px;
+            }
+            &__pic-drops {
+                position: absolute;
+            }
+            &__text {
+                display: flex;
+                flex-direction: column;
+                flex: 50%;
+                font-family: "gagalinregular" , Arial, Helvetica, sans-serif;
+                color: #f9b43b;
+                font-size: 59px;
+                text-transform: uppercase;
+                padding: 0 0 0 23px;
+                align-self: flex-end;
+                
+            }
+}
+
+.title{
+    font-size: 72px;
+    text-align: start;
+
+    &__text {
+        font-family: 'lifehackmedium' , Arial, Helvetica, sans-serif;
+        font-size: 65px;
+        color: #ffffff ;
+        text-transform:initial ;
+        letter-spacing: -1.63px;
+    }
+    
+}
+
+.main__content {
+    display: flex;
+}
+
+.sidebar__menu {
+   display: flex;
+        &-item {
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+
+            &--active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                color: #ffffff;
+            }
+        }
+
+        &-link {
+            background-color: white;
+            width: 6px;
+            height: 6px;
+            border: 1px solid;
+            border-radius: 50%;
+            color: #FFFFFF;
+        }
+}
+

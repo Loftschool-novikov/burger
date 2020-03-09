@@ -1,0 +1,45 @@
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+        &-list {
+            display: flex;
+        }
+        &-text {
+            margin-right: 19px;
+            padding: 0 0 0 10px;
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            @include menu;
+        }
+        &-border {
+            background-color: white;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            color: #FFFFFF;
+        }
+}
+
+.btn {
+    margin-right: 4%;
+    background-color:#e45028 ;
+    // border: 1px solid #e45028;
+    border-radius: 3px;
+    height:35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+        &__order {
+            @include menu;
+        }
+   
+}
