@@ -816,6 +816,12 @@ html, body {
   transition: .3s;
 }
 
+.review__hover--active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .review__hover .btn {
   background-color: #1f2122;
 }
