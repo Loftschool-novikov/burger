@@ -862,5 +862,45 @@ html, body {
 .team {
   background-image: url(./images/team/team-bg.jpg);
   background-size: cover;
+  position: relative;
+}
+
+.team__accordeon {
+  color: #ffffff;
+  font-family: 'gagalinregular', Helvetica, sans-serif;
+}
+
+.team__accordeon-name {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.team__accordeon-title {
+  background-color: black;
+  min-height: 60.22em;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+}
+
+.team__accordeon-name-title, .team__accordeon-name-subtitle {
+  font-size: 14px;
+  font-family: 'ubunturegular';
+}
+
+.team__accordeon-name-title {
+  font-family: 'ubuntubold';
+}
+
+.team__accordeon-name-img {
+  border-radius: 50%;
+}
+
+.team__accordeon-name-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

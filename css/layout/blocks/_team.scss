@@ -1,4 +1,45 @@
 .team {
     background-image: url(./images/team/team-bg.jpg);
     background-size: cover;
+    position: relative;
+}
+
+.team__accordeon {
+    color:#ffffff ;
+    @include gagalin ();
+
+    &-name {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &-title{
+        background-color: black;
+        min-height: 60.22em;
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.8;
+    }
+}
+
+.team__accordeon-name {
+
+    &-title, &-subtitle {
+        font-size: 14px;
+        font-family: 'ubunturegular';
+    }
+
+    &-title {
+        font-family: 'ubuntubold';
+    }
+
+    &-img {
+    border-radius: 50%;
+    }
+
+    &-content {
+        display: flex;
+    }
 }
