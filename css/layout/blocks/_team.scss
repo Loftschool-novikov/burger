@@ -28,10 +28,12 @@
     }
 
     &-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         min-height: 650px;
         background-color: #343739;
-        min-height: 60.22em;
         width: 50%;
         position: absolute;
         right: 0;
