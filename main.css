@@ -949,7 +949,7 @@ html, body {
   position: relative;
   width: 10px;
   height: 10px;
-  background-image: url(/images/team/triangle_down.png);
+  background-image: url(./images/team/triangle_down.png);
   background-repeat: no-repeat;
 }
 
@@ -1010,6 +1010,6 @@ html, body {
 }
 
 .team__accordeon-triangle--active {
-  background-image: url(/images/team/triangle_up.png);
+  background-image: url(./images/team/triangle_up.png);
 }
 /*# sourceMappingURL=main.css.map */

@@ -45,7 +45,7 @@
         position: relative;
         width: 10px;
         height: 10px;
-        background-image: url(/images/team/triangle_down.png);
+        background-image: url(./images/team/triangle_down.png);
         background-repeat: no-repeat;
     }
 }
@@ -99,5 +99,5 @@
 }
 
 .team__accordeon-triangle--active {
-    background-image: url(/images/team/triangle_up.png);
+    background-image: url(./images/team/triangle_up.png);
 }
