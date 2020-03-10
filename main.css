@@ -982,6 +982,10 @@ html, body {
   position: relative;
 }
 
+.hero__image {
+  position: relative;
+}
+
 .hero__content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,5 +1033,12 @@ html, body {
       align-self: center;
   width: 50%;
   padding-top: 94px;
+  padding-left: 10px;
+}
+
+.hero__image-drops {
+  position: absolute;
+  top: 19%;
+  left: -3%;
 }
 /*# sourceMappingURL=main.css.map */
