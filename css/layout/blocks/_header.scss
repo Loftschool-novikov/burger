@@ -1,59 +1,25 @@
-.header {
-    position: absolute;
-    top: 10vh;
-}
 
-.header__menu {
+.header {
+    height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 12px;
-        &-list {
-            display: flex;
-        }
-        &-text {
-            @include ubuntu();
-            font-weight: 800;
-            margin-right: 18px;
-            padding: 0 0 0 10px;
-        }
-        &-link {
-            display: flex;
-            align-items: center;
-            @include menu;
-        }
-        &-border {
-            background-color: white;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            color: #FFFFFF;
-            
-            &--active {
-                display: none;
-            }
-        }
+  }
+  
+.header__btns {
+    display: flex;
+    align-items: center;
 }
 
 .btn {
     @include ubuntu();
-    margin-right: 4%;
-    background-color:#e45028 ;
-    // border: 1px solid #e45028;
-    border-radius: 3px;
-    height:35px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 12px;
     font-weight: 800;
+    background: $red;
     text-decoration: none;
-        &__order {
-            @include ubuntu();
-            @include menu;
-            font-weight: 800;
-        }
-   
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 13px;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 15px;
 }

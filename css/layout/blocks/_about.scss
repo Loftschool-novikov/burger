@@ -1,32 +1,4 @@
 
-.about {
-    display: flex;
-        &__pic{   
-            display: flex;
-            flex: 50%;
-            padding: 100px 0 0 0;
-        }
-            &__pic-burger{
-                position: relative;
-                margin: -67px 0 0 30px;
-            }
-            &__pic-drops {
-                position: absolute;
-            }
-            &__text {
-                display: flex;
-                flex-direction: column;
-                flex: 50%;
-                font-family: "gagalinregular" , Arial, Helvetica, sans-serif;
-                color: #f9b43b;
-                font-size: 59px;
-                text-transform: uppercase;
-                padding: 0 0 0 23px;
-                align-self: flex-end;
-                
-            }
-}
-
 .title{
     font-size: 72px;
     text-align: start;
@@ -43,6 +15,10 @@
 
 .main__content {
     display: flex;
+}
+
+.sidebar {
+    height: 95%;
 }
 
 .sidebar__menu {
@@ -76,4 +52,3 @@
             color: #FFFFFF;
         }
 }
-

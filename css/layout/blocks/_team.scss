@@ -99,5 +99,6 @@
 }
 
 .team__accordeon-triangle--active {
+    align-self: flex-end;
     background-image: url(./images/team/triangle_up.png);
 }

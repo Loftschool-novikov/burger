@@ -11,7 +11,7 @@
       @include ubuntu();
       padding: 29px 0;
       font-size: 14px;
-      line-height: 2;
+      line-height: 1.8;
       letter-spacing: 0.8px;
       width: 88%;
     }
@@ -60,6 +60,20 @@
   }
   
   .btn {
+    @include ubuntu();
+    margin-right: 4%;
+    background-color:#e45028 ;
+    // border: 1px solid #e45028;
+    border-radius: 3px;
+    height:35px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
     background-color: #1f2122;
 
     &:hover {
