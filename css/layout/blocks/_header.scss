@@ -12,7 +12,9 @@
             display: flex;
         }
         &-text {
-            margin-right: 19px;
+            @include ubuntu();
+            font-weight: 800;
+            margin-right: 18px;
             padding: 0 0 0 10px;
         }
         &-link {
@@ -26,6 +28,10 @@
             height: 6px;
             border-radius: 50%;
             color: #FFFFFF;
+            
+            &--active {
+                display: none;
+            }
         }
 }
 
@@ -46,8 +52,8 @@
     text-decoration: none;
         &__order {
             @include ubuntu();
-            font-weight: 800;
             @include menu;
+            font-weight: 800;
         }
    
 }

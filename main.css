@@ -595,7 +595,9 @@ template {
 }
 
 .header__menu-text {
-  margin-right: 19px;
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: 800;
+  margin-right: 18px;
   padding: 0 0 0 10px;
 }
 
@@ -623,6 +625,10 @@ template {
   color: #FFFFFF;
 }
 
+.header__menu-border--active {
+  display: none;
+}
+
 .btn {
   font-family: 'ubuntu', Helvetica, sans-serif;
   margin-right: 4%;
@@ -647,7 +653,6 @@ template {
 
 .btn__order {
   font-family: 'ubuntu', Helvetica, sans-serif;
-  font-weight: 800;
   color: #ffffff;
   font-size: 13px;
   font-weight: 500;
@@ -655,6 +660,7 @@ template {
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: initial;
+  font-weight: 800;
 }
 
 h1, h2, h3, h4, p {
@@ -887,9 +893,30 @@ html, body {
   position: relative;
 }
 
+.team__sections {
+  margin: 20% 0 8%;
+}
+
 .team__accordeon {
   color: #ffffff;
   font-family: 'gagalinregular', Helvetica, sans-serif;
+}
+
+.team__accordeon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__accordeon-item {
+  margin: 0 0 38px 0;
 }
 
 .team__accordeon-name {
@@ -898,22 +925,41 @@ html, body {
 }
 
 .team__accordeon-title {
-  background-color: black;
+  height: 100vh;
+  min-height: 650px;
+  background-color: #343739;
   min-height: 60.22em;
   width: 50%;
   position: absolute;
   right: 0;
   bottom: 0;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.team__accordeon-triangle {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-image: url(/images/team/triangle_down.png);
+  background-repeat: no-repeat;
+}
+
+.team__accordeon-name {
+  padding-left: 7px;
 }
 
 .team__accordeon-name-title, .team__accordeon-name-subtitle {
+  margin: 0;
   font-size: 14px;
-  font-family: 'ubunturegular';
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
-.team__accordeon-name-title {
-  font-family: 'ubuntubold';
+.team__accordeon-name-subtitle {
+  margin-top: 21px;
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: lighter;
 }
 
 .team__accordeon-name-img {
@@ -924,5 +970,37 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 0;
+  overflow: hidden;
+}
+
+.team__accordeon-name-text {
+  width: 40%;
+  padding: 0 0 0 19px;
+}
+
+.team__accordeon-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 10px 100px;
+}
+
+.team__accordeon-item--active > .team__accordeon-item-wrapper {
+  color: #f9b43b;
+}
+
+.team__accordeon-name-content--active {
+  height: 100%;
+}
+
+.team__accordeon-triangle--active {
+  background-image: url(/images/team/triangle_up.png);
 }
 /*# sourceMappingURL=main.css.map */

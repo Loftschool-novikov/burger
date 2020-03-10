@@ -2,11 +2,25 @@
     background-image: url(./images/team/team-bg.jpg);
     background-size: cover;
     position: relative;
+
+    &__sections {
+        margin: 20% 0 8%;
+    }
 }
 
 .team__accordeon {
     color:#ffffff ;
     @include gagalin ();
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-item {
+        margin: 0 0 38px 0;
+    }
 
     &-name {
         font-size: 14px;
@@ -14,25 +28,41 @@
     }
 
     &-title{
-        background-color: black;
+        height: 100vh;
+        min-height: 650px;
+        background-color: #343739;
         min-height: 60.22em;
         width: 50%;
         position: absolute;
         right: 0;
         bottom: 0;
-        opacity: 0.8;
+        opacity: 0.9;
+    }
+
+    &-triangle {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        background-image: url(/images/team/triangle_down.png);
+        background-repeat: no-repeat;
     }
 }
 
 .team__accordeon-name {
+    padding-left: 7px;
 
     &-title, &-subtitle {
+        margin: 0;
         font-size: 14px;
-        font-family: 'ubunturegular';
+        @include ubuntu();
+        font-weight: 800;
+        line-height: 1.5;
     }
 
-    &-title {
-        font-family: 'ubuntubold';
+    &-subtitle {
+        margin-top: 21px;
+        @include ubuntu();
+        font-weight: lighter;
     }
 
     &-img {
@@ -41,5 +71,31 @@
 
     &-content {
         display: flex;
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
     }
+
+    &-text {
+        width: 40%;
+        padding: 0 0 0 19px;
+    }
+}
+
+.team__accordeon-item-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 0 10px 100px;
+}
+
+.team__accordeon-item--active > .team__accordeon-item-wrapper {
+    color: #f9b43b;
+}
+
+.team__accordeon-name-content--active {
+        height: 100%;
+}
+
+.team__accordeon-triangle--active {
+    background-image: url(/images/team/triangle_up.png);
 }
