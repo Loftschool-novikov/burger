@@ -1,3 +1,8 @@
+.header {
+    position: absolute;
+    top: 10vh;
+}
+
 .header__menu {
     display: flex;
     justify-content: space-between;
@@ -25,6 +30,7 @@
 }
 
 .btn {
+    @include ubuntu();
     margin-right: 4%;
     background-color:#e45028 ;
     // border: 1px solid #e45028;
@@ -36,9 +42,11 @@
     align-items: center;
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 800;
     text-decoration: none;
         &__order {
+            @include ubuntu();
+            font-weight: 800;
             @include menu;
         }
    

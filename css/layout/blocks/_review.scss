@@ -3,8 +3,17 @@
     color: #fff;
     filter: grayscale(100%);
 
+    &__username {
+      @include gagalin()
+    }
+
     &__content {
-        padding: 29px 0;
+      @include ubuntu();
+      padding: 29px 0;
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.8px;
+      width: 88%;
     }
   
     &:hover {

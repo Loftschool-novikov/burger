@@ -8,9 +8,9 @@
 	font-family: 'gagalinregular', Helvetica, sans-serif;
 }
 
-// @mixin ubuntu() {
-
-// }
+@mixin ubuntu() {
+    font-family: 'ubuntu', Helvetica, sans-serif;
+}
 
 @font-face {
     font-family: 'lifehackmedium';
@@ -34,7 +34,7 @@
 
 
 @font-face {
-    font-family: 'ubunturegular';
+    font-family: 'ubuntu';
     src: url('./fonts/ubuntu-regular-webfont.woff2') format('woff2'),
          url('./fonts/ubuntu-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -46,10 +46,10 @@
 
 
 @font-face {
-    font-family: 'ubuntulight';
+    font-family: 'ubuntu';
     src: url('./fonts/ubuntu-light-webfont.woff2') format('woff2'),
          url('./fonts/ubuntu-light-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 
 }
@@ -70,10 +70,10 @@
 
 
 @font-face {
-    font-family: 'ubuntubold';
+    font-family: 'ubuntu';
     src: url('/fonts/ubuntu-b-webfont.woff2') format('woff2'),
          url('/fonts/ubuntu-b-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 800;
     font-style: normal;
 
 }
