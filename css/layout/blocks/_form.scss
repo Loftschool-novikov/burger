@@ -1,0 +1,116 @@
+.order-section {
+    background-image: url(./images/form/form-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    &__wrapper {
+        @include ubuntu();
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.order {
+    width: 50%;
+    
+    &__block {
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 10px 0;
+
+        .order__block:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+
+    &__input {
+        border: 3px solid transparent;
+        width: 100%;
+        border-radius: 4px;
+        padding: 8px 18px;
+    }
+    
+    &__title {
+        @include ubuntu();
+        font-size: 14px;
+        color: white;
+        margin-bottom: 5px;
+    }
+}
+
+.form__element {
+    margin-left: 20px;
+    width: 50%;
+    @include ubuntu();
+    font-size: 14px;
+    color: white;
+
+}
+
+.form__input {
+    margin-top: 5px;
+    min-height: 8em;
+    min-width: 90%;
+    border-radius: 4px;
+    
+}
+
+.switch-controls__buttons {
+    margin-top: 10px;
+    display: flex;
+
+    >.switch-controls__elem:nth-child(2) {
+        margin-left: 26px;
+    }
+}
+
+.switch-controls__elem {
+    display: flex;
+
+        &-title {
+            margin-left: 10px;
+        }
+}
+
+.form__radio {
+    padding: 20px 0 20px;
+    display: flex;
+}
+
+.form__title {
+    margin-left: 10px;
+}
+
+.form__buttons {
+    display: flex;
+}
+
+.btn--none {
+    font-weight: lighter;
+    text-transform: initial;
+    font-size: 14px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.switch-controls__elem-title:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: border .1s linear;
+}

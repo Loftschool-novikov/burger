@@ -41,7 +41,13 @@
 } 
 
 .hero__image-drops {
+  width: 400px;
+  height: 377px;
   position: absolute;
-  top: 19%;
-  left: -3%;
+  top: 0;
+}
+
+.icon__scroll {
+  width: 30px;
+  height: 30px;
 }

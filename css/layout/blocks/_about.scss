@@ -18,7 +18,11 @@
 }
 
 .sidebar {
-    height: 95%;
+    z-index: 5;
+    position: fixed;
+    right: 0;
+    margin: 0 75px 0 0;
+    height: 59%;
 }
 
 .sidebar__menu {
@@ -52,3 +56,9 @@
             color: #FFFFFF;
         }
 }
+
+input:focus{
+    border: 3px solid #f9b43b;
+    outline: 0;
+    outline-offset: 0;
+    }

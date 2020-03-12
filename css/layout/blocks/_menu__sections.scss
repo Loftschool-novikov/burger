@@ -1,0 +1,61 @@
+.menu__sections {
+    position: relative;
+    background-image: url(./images/menu/menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-accordeon {
+        position: absolute;
+        top: 14%;
+        left: 7%;
+        color: white;
+        text-align: start;
+    }
+}
+
+.menu__accordeon-content {
+    writing-mode: vertical-lr;
+    display: flex;
+    align-items: flex-end;
+    height: 100vh;
+    position: absolute;
+    width: 70%;
+    right: 0;
+    bottom: 0;
+}
+
+.menu__accordeon-item {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+
+    &-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &-title {
+        padding-top: 20px;
+        @include gagalin();
+        font-weight: normal;
+        font-size: 40px;
+        background-image: url(./images/menu/bg_1.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-subtitle {
+        overflow: hidden;
+        width: 0;
+
+        background-color:#363232 ;
+        opacity: 0.9;
+        @include ubuntu();
+        font-size: 14px;
+    }
+}
+
+.menu__accordeon-item-content--active * {
+    width: 100%;
+    color: chocolate;
+}

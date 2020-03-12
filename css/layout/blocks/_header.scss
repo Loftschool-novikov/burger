@@ -1,9 +1,13 @@
 
 .header {
-    height: 10vh;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    &__icon {
+        height: 80px;
+    }
   }
   
 .header__btns {
@@ -12,6 +16,9 @@
 }
 
 .btn {
+    cursor: pointer;
+    outline: transparent;
+    border: none;
     @include ubuntu();
     font-weight: 800;
     background: $red;
