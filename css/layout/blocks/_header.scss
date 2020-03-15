@@ -1,12 +1,13 @@
 
 .header {
-    height: 100px;
+    height: rem(100px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     &__icon {
-        height: 80px;
+        width: rem(68px);
+        height: rem(68px);
     }
   }
   
@@ -16,6 +17,7 @@
 }
 
 .btn {
+    color: white;
     cursor: pointer;
     outline: transparent;
     border: none;
@@ -24,9 +26,40 @@
     background: $red;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 5px;
-    font-size: 13px;
+    border-radius: rem(5px);
+    font-size: rem(13px);
     display: inline-block;
-    padding: 10px 15px;
-    margin-right: 15px;
+    padding: rem(10px) rem(15px);
+    margin-right: rem(15px);
 }
+
+.header__burgerMenu {
+    display: none;
+    position: relative;
+    width: rem(30px);
+    border-radius: rem(3px);
+    border-top: rem(4px) solid white;
+
+    &:after {
+        top: rem(5px);
+        position: absolute;
+        content: "";
+        width: rem(30px);
+        border-radius: rem(3px);
+        border-top: rem(4px) solid white;
+    }
+
+    &::before {
+        bottom: rem(9px);
+        position: absolute;
+        content: "";
+        width: rem(30px);
+        border-radius: rem(3px);
+        border-top: rem(4px) solid white;
+    }
+
+    @include tablets {
+        display: block;
+    }
+}
+

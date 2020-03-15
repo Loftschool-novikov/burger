@@ -1,10 +1,20 @@
+// html {
+//   font-size: 16px;
+//   @include tablets {
+//     font-size: rem(14px);
+//   }
+//   @include phones {
+//     font-size: rem(13px);
+//   }
+// }
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-size: 16px;
+  // font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +25,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  // min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }

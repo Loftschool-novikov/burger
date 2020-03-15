@@ -3,12 +3,12 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    min-height: 650px;
+    min-height: rem(650px);
   }
 
   .section__title {
-    margin-bottom: 60px;
-    font-size: 72px; 
+    margin-bottom: rem(60px);
+    font-size: rem(72px); 
     color: $yellow;
     @include gagalin();
     line-height: 1;

@@ -4,16 +4,31 @@
     filter: grayscale(100%);
 
     &__username {
-      @include gagalin()
+      @include gagalin();
+
+      @include tablets {
+       margin-bottom: 13px;
+      }
+
     }
 
     &__content {
       @include ubuntu();
-      padding: 29px 0;
-      font-size: 14px;
+      padding: rem(29px) 0;
+      font-size: rem(14px);
       line-height: 1.8;
-      letter-spacing: 0.8px;
+      letter-spacing: rem(0.8px);
       width: 88%;
+
+      @include tablets {
+        padding: 0;
+        width: 100%;
+        height: 70%;
+      }
+      & > p {
+        text-align: center;
+        font-size: 12px;
+      }
     }
   
     &:hover {
@@ -41,11 +56,11 @@
   
 .review__hover {
   position: absolute;
-  padding: 15px;
+  padding: rem(15px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 24px;
+  line-height: rem(24px);
   top: 0;
   left: 0;
   right: 0; 
@@ -53,6 +68,7 @@
   opacity: 0;
   transform: scale(.8);
   transition: .3s;
+
 
   &--active {
     opacity: 1;
@@ -63,15 +79,15 @@
     @include ubuntu();
     margin-right: 4%;
     background-color:#e45028 ;
-    // border: 1px solid #e45028;
-    border-radius: 3px;
-    height:35px;
-    width: 100px;
+    // border: rem(1px) solid #e45028;
+    border-radius: rem(3px);
+    height:rem(35px);
+    width: rem(100px);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: rem(12px);
     font-weight: 800;
     text-decoration: none;
     background-color: #1f2122;
@@ -79,6 +95,16 @@
     &:hover {
         background-color: #2f3234;
     }
+
+    @include tablets {
+      margin: 0 0 16px 0;
+     }
+
+
+  }
+
+  @include tablets {
+    align-items: center;
   }
 }
 

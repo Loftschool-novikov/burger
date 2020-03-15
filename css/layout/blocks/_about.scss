@@ -1,11 +1,11 @@
 
 .title{
-    font-size: 72px;
+    font-size: rem(72px);
     text-align: start;
 
     &__text {
         font-family: 'lifehackmedium' , Arial, Helvetica, sans-serif;
-        font-size: 65px;
+        font-size: rem(65px);
         color: #ffffff ;
         text-transform:initial ;
         letter-spacing: -1.63px;
@@ -13,51 +13,55 @@
     
 }
 
-.main__content {
-    display: flex;
-}
+// .main__content {
+//     display: flex;
+// }
 
 .sidebar {
     z-index: 5;
     position: fixed;
-    right: 175px;
-    top: 100px;
+    right: rem(50px);
+    top: rem(100px);
+
+    @include phones {
+        display: none;
+    }
 }
 
 .sidebar__menu {
    display: flex;
         &-item {
-            width: 16px;
-            height: 16px;
+            width: rem(16px);
+            height: rem(16px);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 8px;
+            margin-bottom: rem(8px);
 
             &--active {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid;
+                border: rem(1px) solid;
                 border-radius: 50%;
-                width: 16px;
-                height: 16px;
+                width: rem(16px);
+                height: rem(16px);
                 color: #ffffff;
             }
         }
 
         &-link {
             background-color: white;
-            width: 6px;
-            height: 6px;
-            border: 1px solid;
+            width: rem(6px);
+            height: rem(6px);
+            border: rem(1px) solid;
             border-radius: 50%;
             color: #FFFFFF;
         }
 }
 
 input:focus{
-    border: 3px solid #f9b43b;
+    border: rem(3px) solid #f9b43b;
     outline: 0;
     outline-offset: 0;
     }

@@ -6,12 +6,29 @@
     position: relative;
 
     &__image {
+      width: 100%;
       position: relative;
+
+    @include tablets {
+      
+      display: contents;
     }
+
+    @include phones {
+        width: 70%;
+    }
+  }
 }
 
 .hero__content-wrapper {
     display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
 }
 .hero__container {
     display: flex;
@@ -20,7 +37,7 @@
 }
   
 .hero__desc {
-    font-size: 65px;
+    font-size: rem(65px);
     @include lifehack();
     line-height: 1.1;
 }
@@ -28,7 +45,7 @@
 .hero__content {
     display: flex;
     align-items: center;
-  flex: .8;
+    flex: .8;
   }
   
 .hero__text {
@@ -36,18 +53,45 @@
     flex-direction: column;
     align-self: center;
     width: 50%;
-    padding-top: 94px;
-    padding-left: 10px;
-} 
+    padding-top: rem(94px);
+    padding-left: rem(10px);
+
+  @include tablets {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: wrap;
+
+    &> h1, h3 {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+  }
+    
+  @include phones {
+    width: 100%;
+  }
+}
 
 .hero__image-drops {
-  width: 400px;
-  height: 377px;
+  width: rem(400px);
+  height: rem(377px);
   position: absolute;
   top: 0;
+
+  @include phones {
+    width: 28rem;
+    height: 36.5625rem
+  }
 }
 
 .icon__scroll {
-  width: 30px;
-  height: 30px;
+  width: rem(30px);
+  height: rem(30px);
+
+  @include tablets {
+    margin: 0;
+  }
 }

@@ -16,16 +16,16 @@
 
 
 // .container {
-//     width: 940px;
+//     width: rem(940px);
 //     margin: 0 auto;
 // }
 
 @mixin menu {
     color: #ffffff;
-    font-size:13px;
+    font-size:rem(13px);
     font-weight: 500;
     font-family: ubuntu;
-    line-height: 30px;
+    line-height: rem(30px);
     text-transform: uppercase;
     text-decoration: initial;
 }

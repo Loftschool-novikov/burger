@@ -7,18 +7,27 @@ $red: #e35028;
 
 @mixin menu {
     color: #ffffff;
-    font-size:13px;
+    font-size:rem(13px);
     font-weight: 500;
-    font-family: ubuntu;
-    line-height: 30px;
+    // font-family: ubuntu;
+    line-height: rem(30px);
     text-transform: uppercase;
     text-decoration: initial;
 }
+
+// resolutions
+
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
 
 // ===base==
 @import './css/layout/fonts'; 
 @import './css/layout/layout'; 
 @import './css/layout/normalize'; 
+@import './css/layout/media'; 
 // ===/base==
 
 
