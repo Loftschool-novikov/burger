@@ -58,13 +58,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -481,7 +481,7 @@ template {
 .sidebar {
   z-index: 5;
   position: fixed;
-  right: 375px;
+  right: 175px;
   top: 100px;
 }
 
@@ -578,28 +578,6 @@ input:focus {
   display: inline-block;
   padding: 10px 15px;
   margin-right: 15px;
-}
-
-h1, h2, h3, h4, p {
-  margin: 0;
-}
-
-ul li {
-  list-style: none;
-}
-
-html, body {
-  height: 100%;
-}
-
-.wpapper {
-  overflow: hidden;
-  height: 100%;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
 }
 
 .scroll {
@@ -1107,7 +1085,7 @@ html, body {
   color: #f9b43b;
 }
 
-.accordeon__link-meat {
+.accordeon__link_meat {
   background-image: url(./images/menu/bg_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1147,7 +1125,7 @@ html, body {
 }
 
 .accordeon__link_vegan {
-  background-image: url(.images/menu/bg_2.jpg);
+  background-image: url(./images/menu/bg_2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -1157,7 +1135,7 @@ html, body {
 }
 
 .accordeon__link_diet {
-  background-image: url(.images/menu/bg_3.jpg);
+  background-image: url(./images/menu/bg_3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
