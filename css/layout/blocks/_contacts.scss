@@ -8,6 +8,12 @@
 
 .footer__content {
     display: flex;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 .footer__contact {
@@ -20,7 +26,11 @@
 
     &-info {
         display: flex;
+
+    @include phones {
+        justify-content: center;
     }
+}
 
     &-street {
         padding: rem(10px) 0;
@@ -47,6 +57,11 @@
 .footer__social {
     width: 50%;
     display: flex;
+
+    @include phones {
+        justify-content: center;
+        padding: 10px;
+    }
 }
 
 .footer__social-icon-fb {

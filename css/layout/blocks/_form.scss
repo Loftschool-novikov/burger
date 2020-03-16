@@ -15,6 +15,12 @@
             align-items: center;
         }
     }
+
+    &__row {
+        @include phones {
+            width: 426px;
+        }
+    }
 }
 
 .order {
@@ -47,6 +53,10 @@
         color: white;
         margin-bottom: rem(5px);
     }
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .form__element {
@@ -61,12 +71,16 @@
         width: 50%;
     }
 
+    @include phones {
+        width: 100%;
+    }
+
 }
 
 .form__input {
     margin-top: rem(5px);
     min-height: 8em;
-    min-width: 90%;
+    min-width: 84%;
     border-radius: rem(4px);
 
     @include tablets {
@@ -104,6 +118,14 @@
 
 .form__buttons {
     display: flex;
+
+    &-row {
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }
 
 .btn--none {

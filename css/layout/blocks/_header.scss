@@ -1,5 +1,6 @@
 
 .header {
+    position: absolute;
     height: rem(100px);
     display: flex;
     justify-content: space-between;
@@ -8,6 +9,10 @@
     &__icon {
         width: rem(68px);
         height: rem(68px);
+    }
+
+    @include tablets {
+        position: relative;
     }
   }
   

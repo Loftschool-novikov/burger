@@ -2,4 +2,8 @@
     display: flex;
     justify-content: center;
     margin-top: rem(95px);
+
+    @include phones {
+        margin: 0px 0 108px 0;
+      }
 }

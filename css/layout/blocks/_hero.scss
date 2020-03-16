@@ -15,7 +15,9 @@
     }
 
     @include phones {
-        width: 70%;
+       img { 
+         width: 80%;
+       }
     }
   }
 }
@@ -52,7 +54,7 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 50%;
+    width: 90%;
     padding-top: rem(94px);
     padding-left: rem(10px);
 
@@ -71,6 +73,9 @@
   }
     
   @include phones {
+    &> h1, h3 {
+    font-size: 3.5rem;
+    }
     width: 100%;
   }
 }
@@ -84,6 +89,11 @@
   @include phones {
     width: 28rem;
     height: 36.5625rem
+  }
+
+  @include tablets {
+    width: 27.3rem;
+    height: 34.5625rem;
   }
 }
 

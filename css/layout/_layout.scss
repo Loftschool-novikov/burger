@@ -23,6 +23,8 @@ body {
 }
 
 .wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   width: 100%;
   min-height: 100%;
@@ -43,7 +45,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
+  margin: 0;
   font-weight: normal;
 }
 

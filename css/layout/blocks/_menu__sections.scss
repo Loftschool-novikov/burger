@@ -10,6 +10,12 @@
         left: 7%;
         color: white;
         text-align: start;
+
+        @include phones {
+            font-size: 56px;
+            top: 8%;
+            left: 4%;
+        }
     }
 }
 
