@@ -43,8 +43,14 @@
     height: rem(20px);
 }
 
+.footer__icon:hover {
+    fill: #fff;
+}
 
 .footer__contact-contact-number {
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration:none ;
     color:#da4d27 ;
 }
 

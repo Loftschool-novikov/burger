@@ -12,9 +12,9 @@
         text-align: start;
 
         @include phones {
-            font-size: 56px;
+            font-size: 30px;
             top: 8%;
-            left: 4%;
+            left: 1%;
         }
     }
 }
@@ -55,7 +55,7 @@
     background-size: cover;
     display: block;
     position: relative;
-    width: rem(80px);
+    // width: rem(80px);
     height: 100%;
 }
 

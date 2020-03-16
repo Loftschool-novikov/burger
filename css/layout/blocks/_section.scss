@@ -23,6 +23,7 @@
   }
 
   @include phones {
+    font-size: 50px;
     white-space: initial;
   }
 }

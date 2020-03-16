@@ -13,8 +13,7 @@
         }
 
         @include phones {
-            font-size: 20px;
-            white-space: nowrap;
+            font-size:21px;
         }
     }
 
@@ -28,7 +27,7 @@
 
         @include phones {
             font-size: 13px;
-            padding: 10px 0 0 0;
+            padding: 10px 0 10px 0;
         }
     }
 }
@@ -49,14 +48,14 @@
             width: 50%;
         }
         @include phones {
-            // width: 100%;
-            height: 120px;
-             width: 120px;
+            height: 80px;
+             width: 80px;
         }
     }
 
     @include phones {
-        margin-right: 15px;
+        align-items: center;
+        margin-right: 10px;
     }
 }
 

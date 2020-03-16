@@ -15,10 +15,9 @@
             align-items: center;
         }
     }
-
-    &__row {
+    &__block {
         @include phones {
-            width: 426px;
+        width: 100%;
         }
     }
 }
@@ -37,6 +36,10 @@
 
         .order__block:not(:first-child) {
             margin-left: rem(30px);
+        }
+
+        @include phones {
+            margin: 0;
         }
     }
 
@@ -78,13 +81,14 @@
 }
 
 .form__input {
+    resize: none;
     margin-top: rem(5px);
     min-height: 8em;
-    min-width: 84%;
+    min-width: 100%;
     border-radius: rem(4px);
 
     @include tablets {
-        width: rem(348px);
+        width: 100%;
     }
     
 }

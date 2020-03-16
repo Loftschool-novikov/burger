@@ -124,8 +124,9 @@
 }
 
 .team__accordeon-triangle--active {
-    align-self: flex-end;
-    background-image: url(./images/team/triangle_up.png);
+    // align-self: flex-end;
+    // background-image: url(./images/team/triangle_up.png);
+    transform: rotate(180deg);
 }
 
 .team__userIcon {
