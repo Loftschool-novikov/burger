@@ -1424,6 +1424,26 @@ input:focus {
   height: 100%;
 }
 
+.menu__accordeon-item--active .menu__accordeon-text {
+  height: 100%;
+  width: 100%;
+  line-height: 2;
+  padding-top: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .menu__accordeon-item--active .menu__accordeon-text {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+.menu__accordeon-item--active .menu__accordeon-title {
+  color: #f9b43b;
+}
+
 .accordeon__link_meat {
   background-image: url(./images/menu/bg_1.jpg);
   background-repeat: no-repeat;
