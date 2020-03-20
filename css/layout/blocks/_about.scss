@@ -26,6 +26,10 @@
     @include phones {
         display: none;
     }
+
+    // @include tablets {
+    //     display: none;
+    //   }
 }
 
 .sidebar__menu {
