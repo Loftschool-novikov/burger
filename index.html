@@ -13,16 +13,12 @@
         <section class="section hero">
           <div class="container hero__container">
             <header class="header">
-              <!-- <nav class="hamburger__menu">
-                <ul class="hamburger__list">
-                  <li class="hamburger__item"></li>
-                </ul> -->
               </nav>
-              <svg class="header__icon">
-                <use xlink:href="./images/sprite/sprite.svg#logo"></use>
-              </svg>
+                <svg class="header__icon">
+                  <use xlink:href="./images/sprite/sprite.svg#logo"></use>
+                </svg>
               <div class="header__btns">
-                <nav class="menu menu__hamburger menu__hamburger--active">
+                 <nav class="menu "> <!--  при добавление menu__hamburger-->
                   <ul class="menu__list">
                     <li class="menu__item"> <a href="#" class="menu__link">О нас</a> 
                     </li>
@@ -41,7 +37,9 @@
                   </ul>
                 </nav>
                 <a href="#" class="btn">Заказать</a>
-                <a href="#" class="header__burgerMenu"></a>
+                <a href="#" class="header__burgerMenu ">  <!--  при добавление header__burgerMenu-сlose-->
+                </a>
+                <!-- <a href="#" class="close"></a> -->
               </div>
             </header>
             <div class="hero__content">
@@ -90,7 +88,6 @@
                     </ul>
                 </nav>
             </aside>
-
             </div>
             <div class="scroll">
                 <a href="#">
@@ -151,6 +148,49 @@
                     </div>
                 </li>
               </ul>
+            </div>
+          </section>
+          <section class="section slider">
+            <div class="container slider__content">
+              <div class="slider__left">
+                <a href="#" class="slider__scroll">
+                  <svg class="slider__scroll_left">
+                    <use xlink:href="./images/sprite/sprite.svg#arrow-scroll"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="slider__middle">
+                <div class="slider__middle-image">
+                  <img src="./images/slider/black__burger2.png" class="slider__middle-img" alt="большой бургер">
+                  <img src="./images/slider/burger__mini.png" class="slider__middle-icon" alt="мини бургер">
+                  <svg class="slider__scroll_kkal">
+                    <use xlink:href="./images/sprite/sprite.svg#kkal"></use>
+                  </svg>
+                  <span class="slider__scroll_kkalNumber">1200</span>
+                  <span class="slider__scroll_kkalQuantity">ккал</span>
+                </div>
+                <div class="slider__midle-content">
+                  <div class="slider__middle-info">
+                    <h2 class="section__title section__title--centered section__title--slider">Dark beef<br> burger</h2>
+                  <p class="slider__middle-text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком,
+                                        салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+                                      </p>
+                  </div>
+                  <div class="slider__middle-order">
+                    <span class="slider__middle-price">500</span>
+                    <span class="slider__middle-price-ru">рублей</span>
+                    <a href="#" class="btn btn__slider">Заказать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__right">
+                <a href="#" class="slider__scroll">
+                  <svg class="slider__scroll_right">
+                    <use xlink:href="./images/sprite/sprite.svg#arrow-scroll"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </section>
           <section class="reviews">

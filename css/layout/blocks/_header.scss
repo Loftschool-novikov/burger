@@ -69,7 +69,33 @@
     }
 
     @include tablets {
+        opacity: 1;
         display: block;
     }
 }
 
+.header__burgerMenu-close {
+    opacity: 0;
+    @include tablets {
+        opacity: 1;
+        display: block;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 42px;
+            left: 8px;
+            width: 30px;
+            background: white;
+        }
+    }
+}
+
+.header__burgerMenu-close:before {
+    transform: rotate(45deg);
+}
+
+.header__burgerMenu-close:after {
+    transform: rotate(-45deg);
+}

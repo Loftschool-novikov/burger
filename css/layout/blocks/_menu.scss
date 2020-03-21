@@ -1,6 +1,10 @@
 $itemsMargin: rem(13px);
 .menu {
   padding: 0  rem(16px);
+  
+  @include tablets {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -21,6 +25,8 @@ $itemsMargin: rem(13px);
   font-weight: 800;
   display: flex;
   align-items: center;
+  
+  
   &:before {
     content: "";
     display: block;
@@ -61,7 +67,7 @@ $itemsMargin: rem(13px);
 } 
 
 .menu__hamburger {
-  display: none;
+  display: flex;
   position: fixed;
   background-color: #2f3334;
   opacity: 0.99;
@@ -71,11 +77,7 @@ $itemsMargin: rem(13px);
   bottom: 0;
   z-index: 50;
 
-    &--active {
-      display: none;
-    }
-
-    @include tablets {
-      display: none;
-    }
+    // @include tablets {
+    //   opacity: 0;
+    // }
 }
