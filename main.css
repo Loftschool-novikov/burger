@@ -633,6 +633,7 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   .header__burgerMenu-close {
+    z-index: 60;
     opacity: 1;
     display: block;
   }
