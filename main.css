@@ -595,11 +595,14 @@ input:focus {
 }
 
 .header__burgerMenu {
+  height: 33px;
   display: none;
   position: relative;
   width: 1.875rem;
-  border-radius: 0.1875rem;
+  border-radius: 0.1125rem;
   border-top: 0.25rem solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__burgerMenu:after {
@@ -609,6 +612,8 @@ input:focus {
   width: 1.875rem;
   border-radius: 0.1875rem;
   border-top: 0.25rem solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__burgerMenu::before {
@@ -618,6 +623,8 @@ input:focus {
   width: 1.875rem;
   border-radius: 0.1875rem;
   border-top: 0.25rem solid white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -633,6 +640,7 @@ input:focus {
 
 @media screen and (max-width: 768px) {
   .header__burgerMenu-close {
+    border: none;
     z-index: 60;
     opacity: 1;
     display: block;
@@ -640,11 +648,14 @@ input:focus {
   .header__burgerMenu-close::before, .header__burgerMenu-close::after {
     content: "";
     position: absolute;
-    top: 42px;
-    left: 8px;
+    top: 9px;
+    left: 0px;
+    bottom: 19px;
     width: 30px;
     background: white;
     z-index: 60;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -656,6 +667,10 @@ input:focus {
 .header__burgerMenu-close:after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.header > .btn {
+  margin-left: auto;
 }
 
 .scroll {
@@ -1321,6 +1336,10 @@ input:focus {
   left: 0;
   bottom: 0;
   z-index: 50;
+}
+
+.menu > .btn {
+  margin-left: auto;
 }
 
 .hero {
