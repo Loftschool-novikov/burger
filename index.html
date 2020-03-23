@@ -39,7 +39,7 @@
                 <a href="#" class="btn">Заказать</a>
                 <a href="#" class="header__burgerMenu ">  <!--  при добавление header__burgerMenu-сlose-->
                 </a>
-                <a href="#" class="close"></a>
+                <!-- <a href="#" class="close"></a> -->
               </div>
             </header>
             <div class="hero__content">
@@ -162,7 +162,55 @@
               <div class="slider__middle">
                 <div class="slider__middle-image">
                   <img src="./images/slider/black__burger2.png" class="slider__middle-img" alt="большой бургер">
-                  <img src="./images/slider/burger__mini.png" class="slider__middle-icon" alt="мини бургер">
+                  <a href="#" class="slider__middle-link">
+                    <img src="./images/slider/burger__mini.png" class="slider__middle-icon" alt="мини бургер">
+                    <nav class="slider__hover slider__hover--close">
+                      <ul class="slider__hover-link">
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#beaf"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Говядина</h6>
+                          <p class="slider__hover-item-mass">300г</p>
+                        </li>
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#buns"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Булочка</h6>
+                          <p class="slider__hover-item-mass">100г</p>
+                        </li>
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#salad"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Зелень</h6>
+                          <p class="slider__hover-item-mass">70г</p>
+                        </li>
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#sauce"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Соус</h6>
+                          <p class="slider__hover-item-mass">150г</p>
+                        </li>
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#cucumber"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Огурец</h6>
+                          <p class="slider__hover-item-mass">200г</p>
+                        </li>
+                        <li class="slider__hover-item">
+                          <svg class="slider__hover-item-img">
+                            <use xlink:href="./images/sprite/sprite.svg#cheese"></use>
+                          </svg>
+                          <h6 class="slider__hover-item-name">Сыр</h6>
+                          <p class="slider__hover-item-mass">80г</p>
+                        </li>
+                      </ul>
+                    </nav>
+                  </a>
                   <svg class="slider__scroll_kkal">
                     <use xlink:href="./images/sprite/sprite.svg#kkal"></use>
                   </svg>
@@ -566,5 +614,6 @@
             </div> 
           </section>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>

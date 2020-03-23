@@ -75,7 +75,7 @@
 }
 
 .header__burgerMenu-close {
-    opacity: 0;
+    display: block;
     @include tablets {
         z-index: 60;
         opacity: 1;
@@ -89,6 +89,7 @@
             left: 8px;
             width: 30px;
             background: white;
+            z-index: 60;
         }
     }
 }

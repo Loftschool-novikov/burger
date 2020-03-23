@@ -36,6 +36,9 @@
 .slider__middle {
     display: flex;
 
+    &-icon {
+        position: relative;
+    }
 
     &-order {
 
@@ -50,7 +53,7 @@
         position: relative;
     }
 
-    &-icon {
+    &-link {
         position: absolute;
         top: -23%;
         left: 0%;
@@ -110,6 +113,99 @@
         align-items: center;
     }
 }
+
+.slider__middle-link:hover {
+    border-radius: 5px;
+    background-color:#e35028 ;
+}
+
+.slider__middle-link:hover .slider__hover {
+    display: block;
+}
+
+.slider__hover {
+    z-index: 1;
+    display: none;
+    background-color:#fef8ec;
+    opacity: 0.95;
+    border-radius: 5px;
+    position: absolute;
+    width: 270px;
+    height: 337px;
+    top: 0;
+    left: 91px;
+
+    &-item {
+        padding: 8px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-img {
+            width: 40px;
+            height: 40px;
+
+            @include phones {
+                width: 35px;
+                height: 35px;
+                flex: 1 0 30%;
+            }
+        }
+
+        &-name {
+            padding: 0 33px 0 13px;
+            font-weight: 600;
+        }
+
+        &-name,
+        &-mass {
+            @include ubuntu();
+            font-size: 14px;
+
+            @include phones {
+                font-size: 12px;
+                flex: 1 0 30%;
+            }
+        }    
+
+        @include phones {
+            padding: 3px 0;
+        }
+    }
+
+    @include phones {
+        width: 247px;
+        height: 252px;
+        left: 62px;
+    }
+
+    &--close {
+        &::before, 
+        &::after {
+            display: none;
+            right: 11px;
+            top: 3px;
+            position: absolute;
+            content: ' ';
+            height: 23px;
+            width: 4px;
+            background-color: #eb8364;
+
+            @include phones {
+                display: block;
+            }
+        }
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
 
 
 .btn__slider {
