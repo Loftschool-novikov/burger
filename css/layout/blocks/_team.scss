@@ -35,6 +35,7 @@
 
     &-item {
         margin: 0 0 rem(38px) 0;
+        cursor: pointer;
     }
 
     &-name {
@@ -117,17 +118,17 @@
 
 .team__accordeon-item--active > .team__accordeon-item-wrapper {
     color: #f9b43b;
+    & > .team__accordeon-triangle {
+        transform: rotate(180deg);
+    }
 }
 
-.team__accordeon-name-content--active {
+
+.team__accordeon-item--active > .team__accordeon-name-content {
         height: 100%;
 }
 
-.team__accordeon-triangle--active {
-    // align-self: flex-end;
-    // background-image: url(./images/team/triangle_up.png);
-    transform: rotate(180deg);
-}
+
 
 .team__userIcon {
     @include tablets {

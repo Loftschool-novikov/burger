@@ -5,6 +5,7 @@
 }
 
 .slider__content {
+    overflow: hidden;
     display: flex;
 }
 
@@ -33,7 +34,13 @@
     left: 20px;
 }
 
+.slider__center {
+    display: flex;
+}
+
 .slider__middle {
+    flex: 0 0 100%;
+    max-width: 100%;
     display: flex;
 
     &-icon {
