@@ -7,6 +7,14 @@
 .slider__content {
     overflow: hidden;
     display: flex;
+
+    @include phones {
+        justify-content: center;
+    }
+
+    @include tablets {
+        justify-content: center;
+    }
 }
 
 .slider__right,
@@ -42,6 +50,8 @@
     flex: 0 0 100%;
     max-width: 100%;
     display: flex;
+    height: 100vh;
+    align-items: center;
 
     &-icon {
         position: relative;
@@ -56,7 +66,7 @@
     }
 
     &-img {
-        width: 100%;
+        // width: 100%;
         position: relative;
     }
 
@@ -71,7 +81,7 @@
         }
 
         @include phones {
-            width: 20%;
+            width:19%;
             top: -26%;
             left: 0%;
         }
@@ -118,6 +128,7 @@
     @include tablets {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 }
 
@@ -228,12 +239,12 @@
     position: relative;
     width: 50%;
 
-    @include tablets {
-        width: 80%;
-    }
+    // @include tablets {
+    //     width: 80%;
+    // }
 
     @include phones {
-        width: 100%;
+        width: 35%;
     }
 }
 
@@ -246,7 +257,7 @@
     }
 
     @include phones {
-        width: 100%;
+        width: 40%;
     }
 }
 
@@ -276,9 +287,9 @@
 
 
     @include phones {
-        width: 22%;
-        right: -9.5%;
-        top: -33%
+        width: 16%;
+        right: -4.5%;
+        top: -32%;
     }
 }
 
@@ -297,8 +308,9 @@
     }
 
     @include phones {
-        right: -6%;
-        top: -15%;
+        right: -2%;
+        top: -14%;
+        font-size: 15px;
 
     }
 }
@@ -318,7 +330,7 @@
     }
 
     @include phones {
-        right: -6%;
+        right: -3%;
         top: 2%;
     }
 }

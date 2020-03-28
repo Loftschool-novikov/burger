@@ -1529,6 +1529,11 @@ input:focus {
   height: 100%;
 }
 
+.menu__accordeon-item--active {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .menu__accordeon-item--active .menu__accordeon-text {
   height: 100%;
   width: 100%;
@@ -1725,6 +1730,10 @@ input:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.hidden {
+  overflow: hidden;
 }
 
 .error {
@@ -1978,6 +1987,69 @@ input:focus {
   color: #e35028;
 }
 
+.form__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form__modal--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+}
+
+.form__modal-content {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f9b43b;
+  border-radius: 10px;
+}
+
+.form__modal-close {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  right: 1px;
+  top: -18px;
+  width: 40px;
+  height: 40px;
+  background: #e45028;
+  border-radius: 50%;
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.form__modal-text {
+  text-align: center;
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
 .slider {
   background: -webkit-gradient(linear, left top, right top, from(#eb8c38), to(#f7af3b));
   background: linear-gradient(90deg, #eb8c38, #f7af3b);
@@ -1989,6 +2061,22 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .slider__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .slider__right,
@@ -2035,6 +2123,10 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slider__middle-icon {
@@ -2053,7 +2145,6 @@ input:focus {
 }
 
 .slider__middle-img {
-  width: 100%;
   position: relative;
 }
 
@@ -2072,7 +2163,7 @@ input:focus {
 
 @media screen and (max-width: 480px) {
   .slider__middle-link {
-    width: 20%;
+    width: 19%;
     top: -26%;
     left: 0%;
   }
@@ -2133,6 +2224,9 @@ input:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2261,15 +2355,9 @@ input:focus {
   width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .slider__middle-image {
-    width: 80%;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .slider__middle-image {
-    width: 100%;
+    width: 35%;
   }
 }
 
@@ -2286,7 +2374,7 @@ input:focus {
 
 @media screen and (max-width: 480px) {
   .slider__midle-content {
-    width: 100%;
+    width: 40%;
   }
 }
 
@@ -2321,9 +2409,9 @@ input:focus {
 
 @media screen and (max-width: 480px) {
   .slider__scroll_kkal {
-    width: 22%;
-    right: -9.5%;
-    top: -33%;
+    width: 16%;
+    right: -4.5%;
+    top: -32%;
   }
 }
 
@@ -2346,8 +2434,9 @@ input:focus {
 
 @media screen and (max-width: 480px) {
   .slider__scroll_kkalNumber {
-    right: -6%;
-    top: -15%;
+    right: -2%;
+    top: -14%;
+    font-size: 15px;
   }
 }
 
@@ -2370,7 +2459,7 @@ input:focus {
 
 @media screen and (max-width: 480px) {
   .slider__scroll_kkalQuantity {
-    right: -6%;
+    right: -3%;
     top: 2%;
   }
 }
