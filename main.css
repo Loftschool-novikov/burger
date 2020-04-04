@@ -458,6 +458,23 @@ template {
   display: none;
 }
 
+.bx-wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  background: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #e35028;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #eb8c38;
+}
+
 .title {
   font-size: 4.5rem;
   text-align: start;
@@ -2174,6 +2191,7 @@ input:focus {
   color: white;
   font-size: 14px;
   font-family: 'ubuntu', Helvetica, sans-serif;
+  width: 27%;
 }
 
 @media screen and (max-width: 768px) {
@@ -2352,7 +2370,7 @@ input:focus {
 
 .slider__middle-image {
   position: relative;
-  width: 50%;
+  width: auto;
 }
 
 @media screen and (max-width: 480px) {
@@ -2362,7 +2380,7 @@ input:focus {
 }
 
 .slider__midle-content {
-  width: 50%;
+  width: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -2462,5 +2480,16 @@ input:focus {
     right: -3%;
     top: 2%;
   }
+}
+
+.player-section {
+  background: url(./images/timeWorking/timeWorking_bg.jpg) center center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.player-title {
+  text-align: center;
+  color: #3c3e40;
 }
 /*# sourceMappingURL=main.css.map */
