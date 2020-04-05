@@ -1,5 +1,5 @@
-// =======bxSlider=======
+
 $(document).ready(function(){
-  $('.slider__center').bxSlider();
+  $('.slider__center').slick();
   
 });
