@@ -7,7 +7,6 @@ const md = new MobileDetect(window.navigator.userAgent);
 const isMobile = md.mobile();
 
 const countSectionPosition = (sectionEq) => {
-
   const position = sectionEq * -100;
   if (isNaN(position))
     console.error("передано не верное значение в countSectionPositon");
@@ -41,7 +40,7 @@ const performTransition = (sectionEq) => {
 };
 
 const scroller = () => {
-  const activeSection = sections.filter(".sidebar__menu-item--active");
+  const activeSection = sections.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 

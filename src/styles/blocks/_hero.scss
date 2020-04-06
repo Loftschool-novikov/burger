@@ -1,63 +1,61 @@
 .hero {
-    background: url(./images/fon1.png) center center;
-    height: 100vh;
-    height: 100%;
-    background-size: cover;
-    color: #fff;
+  background: url(./images/fon1.png) center center;
+  height: 100vh;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+
+  &__image {
+    width: 100%;
     position: relative;
 
-    &__image {
-      width: 100%;
-      position: relative;
-
     @include tablets {
-      
       display: contents;
     }
 
     @include phones {
-       img { 
-         width: 80%;
-       }
+      img {
+        width: 80%;
+      }
     }
   }
 }
 
 .hero__content-wrapper {
-    display: flex;
+  display: flex;
 
-    @include tablets {
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-    }
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 .hero__container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-  
+
 .hero__desc {
-    font-size: rem(65px);
-    @include lifehack();
-    line-height: 1.1;
+  font-size: rem(65px);
+  @include lifehack();
+  line-height: 1.1;
 }
-  
+
 .hero__content {
-    display: flex;
-    align-items: center;
-    flex: .8;
-  }
-  
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+
 .hero__text {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 90%;
-    padding-top: rem(94px);
-    padding-left: rem(10px);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  padding-top: rem(94px);
+  padding-left: rem(10px);
 
   @include tablets {
     margin: 0;
@@ -65,17 +63,19 @@
     text-align: center;
     flex-wrap: wrap;
 
-    &> h1, h3 {
+    & > h1,
+    h3 {
       margin: 0;
       padding: 0;
       text-align: center;
       flex-wrap: wrap;
     }
   }
-    
+
   @include phones {
-    &> h1, h3 {
-    font-size: 46px;
+    & > h1,
+    h3 {
+      font-size: 46px;
     }
     width: 100%;
   }
@@ -89,7 +89,7 @@
 
   @include phones {
     width: 28rem;
-    height: 36.5625rem
+    height: 36.5625rem;
   }
 
   @include tablets {

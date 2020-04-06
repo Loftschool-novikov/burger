@@ -1,48 +1,76 @@
+ymaps.ready(init);
 
-// let myMap;
+function init() {
+  let myMap = new ymaps.Map("map", {
+    center: [55.723313, 37.571965],
+    zoom: 13,
+    controls: ["zoomControl", "searchControl"],
+  });
 
-// const init = () => {
-//     myMap = new ymap.Map('map', {
-//         center: [55.76, 37.64],
-//         zoom: 7
-//     })
-// }
+  const coords = [
+    [55.723313, 37.571965],
+    [55.733969, 37.587093],
+    [55.733827, 37.569899],
+  ];
 
-// ymap.ready(init);
-
-document.addEventListener('DOMContentLoaded', function() {
-    ymaps.ready(init);
- });
- 
- function init() {
-    let myMap = new ymaps.Map("map", {
-       center: [55.723313, 37.571965],
-       zoom: 13,
-       controls: ['zoomControl', 'searchControl']
-    });
- 
-    const coords = [
-       [55.723313, 37.571965],
-       [55.733969, 37.587093],
-       [55.733827, 37.569899]
-   ];
- 
-    const myCollection = new ymaps.GeoObjectCollection({}, {
-       draggable: false, // отмена перемещения
-       iconLayout: 'default#image',
-       iconImageHref: './images/icons/sprite.svg#map-marker',
-       iconImageSize: [46, 57],
-       iconImageOffset: [-35, -52]
-    });
-    
-    for (var i = 0; i < coords.length; i++) {
-       myCollection.add(new ymaps.Placemark(coords[i]));
+  marker = new ymaps.Placemark(
+    [55.723313, 37.571965],
+    {
+      hintContent: "Собственный значок метки",
+      balloonContent: "Это красивая метка",
+    }, 
+    {
+    // Опции.
+    // Необходимо указать данный тип макета.
+    iconLayout: "default#image",
+    // Своё изображение иконки метки.
+    iconImageHref: "../images/marker.png",
+    // Размеры метки.
+    iconImageSize: [25, 35],
+    // Смещение левого верхнего угла иконки относительно
+    // её "ножки" (точки привязки).
+    iconImageOffset: [-5, -38],
     }
-    
-    myMap.geoObjects.add(myCollection);
- 
-    myMap.behaviors.disable('scrollZoom');
-    
- };
- 
- 
+  );
+  marker1 = new ymaps.Placemark(
+    [55.733969, 37.587093],
+    {
+      hintContent: "Собственный значок метки",
+      balloonContent: "Это красивая метка",
+    },
+    {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: "default#image",
+      // Своё изображение иконки метки.
+      iconImageHref: "../images/marker.png",
+      // Размеры метки.
+      iconImageSize: [25, 35],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-5, -38],
+    }
+  );
+  marker2 = new ymaps.Placemark(
+    [55.733827, 37.569899],
+    {
+      hintContent: "Собственный значок метки",
+      balloonContent: "Это красивая метка",
+    },
+    {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: "default#image",
+      // Своё изображение иконки метки.
+      iconImageHref: "../images/marker.png",
+      // Размеры метки.
+      iconImageSize: [25, 35],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-5, -38],
+    }
+  );
+  myMap.geoObjects.add(marker).add(marker1).add(marker2);
+
+  myMap.behaviors.disable("scrollZoom");
+}
