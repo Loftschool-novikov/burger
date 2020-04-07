@@ -12,16 +12,6 @@ humburgerMenu.addEventListener("click", function() {
 
 
 // ============================== команда ====================
-// const accordeonTeam = document.querySelectorAll(".team__accordeon-item");
-// for (let i = 0; i < accordeonTeam.length; i++) {
-//   accordeonTeam[i].classList.remove("team__accordeon-item--active");
-//   accordeonTeam[i].addEventListener('click', function() {
-//     for (let i = 0; i < accordeonTeam.length; i++) {                      //
-//       accordeonTeam[i].classList.remove("team__accordeon-item--active"); //удаляет актиынй класс
-//   }                                                                     //
-//       accordeonTeam[i].classList.toggle("team__accordeon-item--active");
-//   });
-// }
 
 const accordeonTeam = document.querySelectorAll(".team__accordeon-item");
 
@@ -62,16 +52,6 @@ accordeonMenu.forEach(accordeonMenu => {
       }
     })
   })
-// for (let i = 0; i < accordeonMenu.length; i++) {
-//   accordeonMenu[i].addEventListener('click', function() {
-//     for (let i = 0; i < accordeonMenu.length; i++) {                      //
-//       accordeonMenu[i].classList.remove("menu__accordeon-item--active");
-//       event.preventDefault();
-//     }
-//       accordeonMenu[i].classList.toggle("menu__accordeon-item--active");
-      
-//   });
-// }
 
 
 
@@ -98,17 +78,6 @@ function loop(direction, e) {
   }
 }
 
-// ============================== слайдер jQuery ====================
-// $(document).ready(function(){
-//   $('.slider').bxSlider();
-// });
-
-// $(document).ready(function(){
-//   $('.slider__center').slick()
-//     {
-//      setting-name: setting-value
-//    });
-// });
 // ============================== форма ====================
 
 const myForm = document.getElementById('myForm');
@@ -144,111 +113,6 @@ myForm.onsubmit = function(event) {
     const response = JSON.parse(request.response);
     madalText.innerHTML = response.message;
     toggleModal();
-    // if (response.status) { 
-		// 			console.log("заказано")
-    // } else {
-    //     console.log("не заказано")
-    // }
+    
   });
-
-
-
-
-
-
-  //     event.preventDefault();
-
-//     if (true) {
-//       const data = {
-//         name: myForm.elements.name.value,
-//         phone: myForm.elements.phone.value,
-//         comment: myForm.elements.comment.value,
-//         // email: myForm.elements.email.value
-//         to: "696amr@mail.ru"
-//       };
-      
-//       let rrr = new FormData(myForm)
-      
-
-//       rrr.append("name", "efwefw");
-//       rrr.append("phone", "efwefw");
-//       rrr.append("comment", "efwefw");
-//       rrr.append("to", "efwefw");
-//       // rrr.name = "effef"
-//       // rrr.phone = "wqfqf"
-//       // rrr.comment = "efe"
-//       // rrr.to = "fefewf"
-
-//       // alert(FormData.message);
-
-//       // fetch("https://webdev-api.loftschool.com/sendmail/fail", {
-//       //   method: "POST", 
-//       //   body: JSON.stringify(data)
-//       // })
-
-//       const xhr = new XMLHttpRequest();
-//       xhr.responseType = "json";
-//       xhr.open("POST", "https://webdev-api.loftschool.com/sendmail")
-//       xhr.send(rrr);
-//       xhr.addEventListener("load", () => {
-//           if (xhr.response.status) {
-//             console.log('заказано')
-//           }
-//       });
-//     }
-// });
-
-
-
-// function validateForm(form) {
-//       let valid = true;
-
-//       if (!validateField(form.elements.name)) {
-//        valid = false;
-//       }
-
-//       if (!validateField(form.elements.phone)) {
-//         valid = false;
-//       }
-
-//       if (!validateField(form.elements.comment)) {
-//         valid = false;
-//       }
-//       if (!validateField(form.elements.house)) {
-//         valid = false;
-//       }
-//       return valid;
-// }
-
-// function validateField(field) {
-//     field.nextElementSibling.textContent = field.validationMessage;
-
-//     return field.checkValidity();
-// }
-
-// ============================== модальное меню ====================
-// const modal = document.getElementById("myModal");
-// const modalCont = document.getElementsByClassName('form__modal-content');
-// const btn = document.getElementById("send");
-// const close = document.getElementsByClassName("form__modal-close");
-
-// btn.addEventListener('click' , function () {
-//   modalCont.style.display = 'block';
-//   modal.style.display = 'block';
-// });
-
-// setTimeout(function () {
-//   modalCont.style.display = 'block';
-//   modal.style.display = 'block';
-// }, 800);
-
-// close.addEventListener('click' , function () {
-//   modalCont.style.display = '';
-//   modal.style.display = '';
-// });
-
-// modal.addEventListener('click' , function () {
-//   modal.style.display = '';
-//   modalCont.style.display = '';
-// });
 }

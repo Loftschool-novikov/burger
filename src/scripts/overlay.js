@@ -1,11 +1,16 @@
 const openButton = document.querySelectorAll("#send__reviews");
 const overlayElement = document.querySelector(".overlay");
 const closeElement = overlayElement.querySelector(".overlay__close");
+const overlayContent = document.querySelector(".overlay__content");
+const reviewContent = document.querySelectorAll(".review__content")
 
 
-openButton.forEach(function(button) {
+openButton.forEach(function(button) { 
     button.addEventListener("click", function() {
-         overlayElement.style.display = "flex";
+        reviewContent.forEach(function(reviewContent) {
+            overlayContent.innerHTML = reviewContent.innerHTML;
+            overlayElement.style.display = "flex";
+        })
 });
 })
 
