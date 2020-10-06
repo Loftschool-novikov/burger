@@ -1,0 +1,140 @@
+.review {
+    position: relative;
+    color: #fff;
+    filter: grayscale(100%);
+
+  &__username {
+    @include gagalin();
+
+    @include tablets {
+      margin-bottom: 13px;
+    }
+
+    @include phones {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+    &__content {
+      @include ubuntu();
+      padding: rem(29px) 0;
+      font-size: rem(14px);
+      line-height: 1.8;
+      letter-spacing: rem(0.8px);
+      width: 88%;
+
+      @include tablets {
+        padding: 0;
+        height: 70%;
+      }
+
+      @include phones {
+        display: none;
+      }
+
+      & > p {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  
+    &:hover {
+      .review__hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+  
+  .review__img-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+  }
+  
+  .rewiew__pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.review__hover {
+  position: absolute;
+  padding: rem(15px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: rem(24px);
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .3s;
+
+
+  &--active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .btn {
+    @include ubuntu();
+    margin-right: 4%;
+    background-color:#e45028 ;
+    // border: rem(1px) solid #e45028;
+    border-radius: rem(3px);
+    height:rem(35px);
+    width: rem(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: rem(12px);
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #1f2122;
+
+    &:hover {
+        background-color: #2f3234;
+    }
+
+    @include tablets {
+      margin: 0 0 16px 0;
+     }
+    
+     @include phones {
+      display: none;
+    }
+
+  }
+
+  @include tablets {
+    align-items: center;
+  }
+}
+
+.review__btn {
+  display: none;
+  @include ubuntu();
+  margin-right: 4%;
+  border-radius: rem(3px);
+  height:rem(35px);
+  width: rem(110px);
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: rem(12px);
+  font-weight: 800;
+  text-decoration: none;
+  background-color: #1f2122;
+
+  @include phones {
+    display: flex;
+  }
+}

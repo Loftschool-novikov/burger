@@ -1,0 +1,71 @@
+
+.title{
+    font-size: rem(72px);
+    text-align: start;
+
+    &__text {
+        font-family: 'lifehackmedium' , Arial, Helvetica, sans-serif;
+        font-size: rem(65px);
+        color: #ffffff ;
+        text-transform:initial ;
+        letter-spacing: -1.63px;
+    }
+    
+}
+
+// .main__content {
+//     display: flex;
+// }
+
+.sidebar {
+    z-index: 5;
+    position: fixed;
+    right: rem(50px);
+    top: rem(100px);
+
+    @include phones {
+        display: none;
+    }
+
+    // @include tablets {
+    //     display: none;
+    //   }
+}
+
+.sidebar__menu {
+   display: flex;
+        &-item {
+            width: rem(16px);
+            height: rem(16px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: rem(8px);
+
+            &--active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: rem(1px) solid;
+                border-radius: 50%;
+                width: rem(16px);
+                height: rem(16px);
+                color: #ffffff;
+            }
+        }
+
+        &-link {
+            background-color: white;
+            width: rem(6px);
+            height: rem(6px);
+            border: rem(1px) solid;
+            border-radius: 50%;
+            color: #FFFFFF;
+        }
+}
+
+input:focus{
+    border: rem(3px) solid #f9b43b;
+    outline: 0;
+    outline-offset: 0;
+    }

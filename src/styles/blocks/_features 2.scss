@@ -1,0 +1,25 @@
+.features {
+    background: url(./images/features-bg.jpg) center center / cover no-repeat;
+  }
+  
+.features__list {
+    padding: rem(31px) 0 0 0;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+
+    @include phones {
+      flex-direction: column;
+  }
+}
+  
+  .features__item {
+    width: calc(100% / 3 - 26px);
+
+    @include phones {
+      display: flex;
+      width: 100%
+    }
+}
+
+ 

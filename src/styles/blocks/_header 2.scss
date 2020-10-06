@@ -1,0 +1,115 @@
+
+.header {
+    position: absolute;
+    height: rem(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__icon {
+        width: rem(68px);
+        height: rem(68px);
+
+        @include tablets {
+            z-index: 60;
+        }
+
+    }
+
+    @include tablets {
+        position: relative;
+    }
+  }
+  
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    cursor: pointer;
+    outline: transparent;
+    border: none;
+    @include ubuntu();
+    font-weight: 800;
+    background: $red;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: rem(5px);
+    font-size: rem(13px);
+    display: inline-block;
+    padding: rem(10px) rem(15px);
+    margin-right: rem(15px);
+}
+
+.header__burgerMenu {
+    height: 33px;
+    display: none;
+    position: relative;
+    width: rem(30px);
+    border-radius: rem(1.8px);
+    border-top: rem(4px) solid white;
+    transition: 0.3s;
+
+    &:after {
+        top: rem(5px);
+        position: absolute;
+        content: "";
+        width: rem(30px);
+        border-radius: rem(3px);
+        border-top: rem(4px) solid white;
+        transition: 0.3s;
+    }
+
+    &::before {
+        bottom: rem(9px);
+        position: absolute;
+        content: "";
+        width: rem(30px);
+        border-radius: rem(3px);
+        border-top: rem(4px) solid white;
+        transition: 0.3s;
+    }
+
+    @include tablets {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.header__burgerMenu-close {
+    display: block;
+    @include tablets {
+        border: none;
+        z-index: 60;
+        opacity: 1;
+        display: block;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 9px;
+            left: 0px;
+            bottom: 19px;
+            width: 30px;
+            background: white;
+            z-index: 60;
+            transition: 0.3s;
+        }
+    }
+}
+
+.header__burgerMenu-close:before {
+    transform: rotate(45deg);
+}
+
+.header__burgerMenu-close:after {
+    transform: rotate(-45deg);
+}
+
+
+.header >.btn {
+    margin-left: auto;
+  }

@@ -4,14 +4,11 @@ const closeElement = overlayElement.querySelector(".overlay__close");
 const overlayContent = document.querySelector(".overlay__content");
 const reviewContent = document.querySelectorAll(".review__content")
 
-
-openButton.forEach(function(button) { 
+openButton.forEach(function(button , i) { 
     button.addEventListener("click", function() {
-        reviewContent.forEach(function(reviewContent) {
-            overlayContent.innerHTML = reviewContent.innerHTML;
-            overlayElement.style.display = "flex";
-        })
-});
+        overlayContent.innerHTML = reviewContent[i/2].innerHTML;
+        overlayElement.style.display = "flex";
+    }); 
 })
 
 closeElement.addEventListener("click", function(e) {

@@ -1,0 +1,263 @@
+.hidden {
+    overflow: hidden;
+  }
+
+.error {
+    color: red;
+}
+
+.order-section {
+    background-image: url(./images/form/form-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form {
+    &__wrapper {
+        @include ubuntu();
+        display: flex;
+        justify-content: space-between;
+
+        @include tablets {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__block {
+        @include phones {
+        width: 100%;
+        }
+    }
+}
+
+.order {
+    width: 50%;
+    
+    &__block {
+        width: 100%;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 rem(10px) rem(10px) 0;
+
+        .order__block:not(:first-child) {
+            margin-left: rem(30px);
+        }
+
+        @include phones {
+            margin: 0;
+        }
+    }
+
+    &__input {
+        border: rem(3px) solid transparent;
+        width: 100%;
+        border-radius: rem(4px);
+        padding: rem(8px) rem(18px);
+    }
+    
+    &__title {
+        @include ubuntu();
+        font-size: rem(14px);
+        color: white;
+        margin-bottom: rem(5px);
+    }
+
+    @include phones {
+        width: 100%;
+    }
+}
+
+.form__element {
+    margin-left: rem(20px);
+    width: 50%;
+    @include ubuntu();
+    font-size: rem(14px);
+    color: white;
+
+    @include tablets {
+        margin: 0;
+        width: 50%;
+    }
+
+    @include phones {
+        width: 100%;
+    }
+
+}
+
+.form__input {
+    resize: none;
+    margin-top: rem(5px);
+    min-height: 8em;
+    min-width: 100%;
+    border-radius: rem(4px);
+
+    @include tablets {
+        width: 100%;
+    }
+    
+}
+
+.switch-controls__buttons {
+    margin-top: rem(10px);
+    display: flex;
+
+    >.switch-controls__elem:nth-child(2) {
+        margin-left: rem(26px);
+    }
+}
+
+.switch-controls__elem {
+    position: relative;
+    display: flex;
+
+        &-title {
+            margin-left: rem(10px);
+        }
+}
+
+.form__radio {
+    padding: rem(20px) 0 rem(20px);
+    display: flex;
+}
+
+.form__title {
+    margin-left: rem(10px);
+}
+
+.form__buttons {
+    display: flex;
+
+    &-row {
+        @include phones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+.btn--none {
+    font-weight: lighter;
+    text-transform: initial;
+    font-size: rem(14px);
+    border: none;
+    background: none;
+    color: white;
+}
+
+.switch-controls__radio:checked + .switch-controls__elem-title:before {
+    border-color: #e35028;
+}
+
+.switch-controls__elem-title:before {
+    content: "";
+    display: block;
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: rem(-1px);
+    left: rem(-2px);
+    z-index: 1;
+    transition: border .1s linear;
+}
+
+.switch-controls__radio:checked + .switch-controls__elem-title:after {
+    opacity: 1;
+}
+
+.switch-controls__elem-title:after {
+    content: "";
+    display: block;
+    width: rem(8px);
+    height: rem(8px);
+    background-color: #e35028;
+    border-radius: 500%;
+    opacity: 0;
+    position: absolute;
+    top: rem(4px);
+    left: rem(3px);
+    z-index: 2;
+    transition: opacity .1s linear;
+}
+
+// === кнопка чек ======
+.form__input-radio {
+    display: none;/* <--скрываем дефолтный чекбокс */
+  }
+  .form__checkbox-style {/* <-- стилизируем новый */
+    height: rem(21px);
+    width: rem(21px);
+    border: rem(1px) solid gray;
+    display: inline-block;
+    position: relative;
+    background-color:#FFF;
+    border-radius:rem(2px);
+    padding:rem(3px);
+  }
+
+  [type=checkbox]:checked + span:before {/* <-- ставим иконку, когда чекбокс включен  */
+    content: '\2714';
+    position: absolute;
+    top: rem(-5px);
+    left: 0;
+    font-size:rem(23px);
+    color:#e35028;
+  }
+
+  .form__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &--active {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+
+    &-content {
+        position: relative;
+        width: 300px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9b43b;
+        border-radius: 10px;
+    }
+
+    &-close {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        right: 1px;
+        top: -18px;
+        width: 40px;
+        height: 40px;
+        background: #e45028;
+        border-radius: 50%;
+        @include ubuntu();
+        cursor: pointer;
+    }
+
+    &-text {
+        text-align: center;
+        @include ubuntu();
+        font-size: 17px;
+        font-weight: bold;
+    }
+  }

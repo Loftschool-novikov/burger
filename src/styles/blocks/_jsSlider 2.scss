@@ -1,0 +1,15 @@
+.bx-wrapper {
+    box-shadow: none; 
+    border: none; 
+    background: none; 
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active, 
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background:#e35028;;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #eb8c38;
+}

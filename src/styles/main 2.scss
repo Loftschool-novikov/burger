@@ -1,0 +1,53 @@
+// ==colors==
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+// == /color==
+
+@mixin menu {
+    color: #ffffff;
+    font-size:rem(13px);
+    font-weight: 500;
+    // font-family: ubuntu;
+    line-height: rem(30px);
+    text-transform: uppercase;
+    text-decoration: initial;
+}
+
+// resolutions
+
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+// @import './**/*.scss'; 
+
+// ===base==
+@import './blocks/fonts'; 
+@import './blocks/layout'; 
+// @import './blocks/normalize'; 
+@import './blocks/media'; 
+@import './blocks/jsSlider';
+// ===/base==
+
+
+// ==blocks==
+@import './blocks/about'; 
+@import './blocks/header'; 
+@import './blocks/base'; 
+@import './blocks/scroll'; 
+@import './blocks/section'; 
+@import './blocks/features'; 
+@import './blocks/reviews'; 
+@import './blocks/review'; 
+@import './blocks/future';
+@import './blocks/team';
+@import './blocks/menu';
+@import './blocks/hero';
+@import './blocks/menu__sections';
+@import './blocks/contacts';
+@import './blocks/form';
+@import './blocks/slider';
+@import './blocks/timeWorking';

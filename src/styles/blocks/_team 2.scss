@@ -1,0 +1,137 @@
+.team {
+    background-image: url(./images/team/team-bg.jpg);
+    background-size: cover;
+    position: relative;
+
+    &__sections {
+        margin: 20% 0 8%;
+    }
+}
+
+.team__accordeon {
+    color:#ffffff ;
+    @include gagalin ();
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    min-height: rem(650px);
+    background-color: #343739;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablets {
+            align-items: center;
+        }
+    }
+
+    &-item {
+        margin: 0 0 rem(38px) 0;
+        cursor: pointer;
+    }
+
+    &-name {
+        font-size: rem(14px);
+        font-weight: normal;
+    }
+
+    &-triangle {
+        position: relative;
+        width: rem(10px);
+        height: rem(10px);
+        background-image: url(./images/team/triangle_down.png);
+        background-repeat: no-repeat;
+    }
+    @include tablets {
+        width: 100%;
+    }
+}
+
+
+
+.team__accordeon-name {
+    padding-left: rem(7px);
+
+    @include tablets {
+        font-size: rem(24px);
+     }
+
+    &-prof, &-text {
+        margin: 0;
+        font-size: rem(14px);
+        @include ubuntu();
+        font-weight: 800;
+        line-height: 1.5;
+    }
+
+    &-text {
+        margin-top: rem(21px);
+        @include ubuntu();
+        font-weight: lighter;
+    }
+
+    &-img {
+    border-radius: 50%;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        height: 0;
+        overflow: hidden;
+
+        @include tablets {
+            align-items: center;
+            flex-direction: column;
+        }
+}
+
+    &-about {
+        width: 40%;
+        padding: 0 0 0 rem(19px);
+
+        @include tablets {
+            text-align: center;
+            width: 90%;
+        }
+    }
+}
+
+.team__accordeon-item-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 0 rem(10px) rem(100px);
+
+    @include tablets {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+.team__accordeon-item--active > .team__accordeon-item-wrapper {
+    color: #f9b43b;
+    & > .team__accordeon-triangle {
+        transform: rotate(180deg);
+    }
+}
+
+
+.team__accordeon-item--active > .team__accordeon-name-content {
+        height: 100%;
+}
+
+
+
+.team__userIcon {
+    @include tablets {
+        margin: rem(12px) 0;
+    }
+}

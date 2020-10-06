@@ -50,6 +50,16 @@
       height: rem(16px);
       color: #ffffff;
     }
+    &:hover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: rem(1px) solid #808080;
+      border-radius: 50%;
+      width: rem(16px);
+      height: rem(16px);
+      transition: 0.5s  ease;
+    }
   }
 
   &-link {
